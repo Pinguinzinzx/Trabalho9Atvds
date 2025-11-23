@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="unipar.br.trabalho9atividades.Lanche"
+      alignment="CENTER"
+      style="-fx-padding: 25;">
+
+    <Label text="Montagem de Lanche"
+           style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+
+    <Label text="Nome do Cliente:"/>
+    <TextField fx:id="txtNome" prefWidth="320"/>
+
+    <Label text="Pão:"/>
+    <ComboBox fx:id="cbPao" prefWidth="200"/>
+
+    <Label text="Carne:"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <RadioButton fx:id="rbBovina" text="Bovina"/>
+        <RadioButton fx:id="rbFrango" text="Frango"/>
+        <RadioButton fx:id="rbSoja" text="Soja"/>
+    </HBox>
+
+    <Label text="Adicionais:"/>
+    <HBox spacing="10" alignment="CENTER">
+        <CheckBox fx:id="cbQueijo" text="Queijo"/>
+        <CheckBox fx:id="cbBacon" text="Bacon"/>
+        <CheckBox fx:id="cbSalada" text="Salada"/>
+        <CheckBox fx:id="cbMolho" text="Molho"/>
+    </HBox>
+
+    <Button text="Gerar Pedido" onAction="#gerarPedido"/>
+    <Label fx:id="lblResumo" wrapText="true" prefWidth="320"/>
+
+    <Button text="Voltar" onAction="#voltar"
+            style="-fx-margin-top: 10;"/>
+
+</VBox>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainPane"
+            xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            fx:controller="unipar.br.trabalho9atividades.Home">
+
+    <center>
+        <VBox alignment="CENTER" spacing="12" style="-fx-padding: 30;">
+            <Label style="-fx-font-size:22px; -fx-font-weight:bold;"
+                   text="ATIVIDADES - JAVAFX" />
+
+            <Button fx:id="btnAtv1" prefWidth="380" text="Atividade 1 — Calculadora" />
+            <Button fx:id="btnAtv2" prefWidth="380" text="Atividade 2 — Conversor de Temperatura" />
+            <Button fx:id="btnAtv3" prefWidth="380" text="Atividade 3 — Cadastro de Pessoa" />
+            <Button fx:id="btnAtv4" prefWidth="380" text="Atividade 4 — Média Escolar" />
+            <Button fx:id="btnAtv5" prefWidth="380" text="Atividade 5 — Cadastro Simples" />
+            <Button fx:id="btnAtv6" prefWidth="380" text="Atividade 6 — Montagem de Lanche" />
+            <Button fx:id="btnAtv7" prefWidth="380" text="Atividade 7 — Semáforo" />
+            <Button fx:id="btnAtv8" prefWidth="380" text="Atividade 8 — Adivinhação" />
+            <Button fx:id="btnAtv9" prefWidth="380" text="Atividade 9 — Conta de Luz" />
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="unipar.br.trabalho9atividades.SemaforoTimer"
+           style="-fx-padding: 24;">
+
+    <VBox alignment="CENTER" spacing="15">
+
+        <Label text="Simulador de Semáforo"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+        <HBox spacing="25" alignment="CENTER">
+
+            <VBox alignment="CENTER" spacing="5">
+                <Circle fx:id="cRed" radius="35" fill="#555"/>
+                <Label text="Vermelho"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="5">
+                <Circle fx:id="cYellow" radius="35" fill="#555"/>
+                <Label text="Amarelo"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="5">
+                <Circle fx:id="cGreen" radius="35" fill="#555"/>
+                <Label text="Verde"/>
+            </VBox>
+
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Button text="Iniciar" onAction="#iniciar"/>
+            <Button text="Parar" onAction="#parar"/>
+            <Button text="Voltar" onAction="#voltar"/>
+        </HBox>
+
+    </VBox>
+
+</StackPane>

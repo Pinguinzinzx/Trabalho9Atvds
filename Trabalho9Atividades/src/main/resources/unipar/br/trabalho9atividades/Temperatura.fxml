@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="12" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.Temperatura" style="-fx-padding:25;">
+    <Label text="Conversor de Temperatura" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+    <TextField fx:id="txtValor" promptText="Valor" prefWidth="200"/>
+    <HBox spacing="10">
+        <Button text="Converter para °F" onAction="#toF"/>
+        <Button text="Converter para °C" onAction="#toC"/>
+    </HBox>
+    <Label fx:id="lblResultado" text="Resultado aparecerá aqui"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

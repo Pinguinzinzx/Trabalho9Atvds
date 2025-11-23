@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="8" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.JogoAdivinhacao" style="-fx-padding:20;">
+    <Label text="Jogo de Adivinhação" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+    <Label text="Tente adivinhar um número entre 1 e 10:"/>
+    <TextField fx:id="txtPalpite" promptText="Digite um número" prefWidth="150"/>
+    <HBox spacing="8">
+        <Button text="Verificar" onAction="#verificar"/>
+        <Button text="Tentar novamente" onAction="#novo"/>
+    </HBox>
+    <Label fx:id="lblResultado"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="8" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.CadastroSimples" style="-fx-padding:16;">
+    <Label text="Cadastro de Alunos" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+    <HBox spacing="8">
+        <TextField fx:id="txtNome" promptText="Nome" prefWidth="200"/>
+        <TextField fx:id="txtIdade" promptText="Idade" prefWidth="80"/>
+        <ComboBox fx:id="cbCurso" promptText="Curso" prefWidth="160"/>
+        <Button text="Adicionar" onAction="#adicionar"/>
+        <Button text="Excluir" onAction="#excluir"/>
+    </HBox>
+    <TableView fx:id="table" prefHeight="320">
+        <columns>
+            <TableColumn text="Nome" prefWidth="300" fx:id="colNome"/>
+            <TableColumn text="Idade" prefWidth="100" fx:id="colIdade"/>
+            <TableColumn text="Curso" prefWidth="200" fx:id="colCurso"/>
+        </columns>
+    </TableView>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

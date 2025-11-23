@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="8" alignment="CENTER_LEFT" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.MédiaEscolar" style="-fx-padding:20 40;">
+    <Label text="Média Escolar" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+    <Label text="Nome do aluno:"/><TextField fx:id="txtNome" prefWidth="350"/>
+    <HBox spacing="8">
+        <TextField fx:id="txtN1" promptText="Nota 1" prefWidth="100"/>
+        <TextField fx:id="txtN2" promptText="Nota 2" prefWidth="100"/>
+        <TextField fx:id="txtN3" promptText="Nota 3" prefWidth="100"/>
+    </HBox>
+    <Button text="Calcular Média" onAction="#calcular"/>
+    <Label fx:id="lblResultado" wrapText="true"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

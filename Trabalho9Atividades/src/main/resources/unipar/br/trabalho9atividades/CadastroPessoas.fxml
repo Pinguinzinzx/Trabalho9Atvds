@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" alignment="CENTER_LEFT" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.CadastroPessoas" style="-fx-padding:20 40;">
+    <Label text="Cadastro de Pessoa" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+    <Label text="Nome:"/><TextField fx:id="txtNome" prefWidth="350"/>
+    <Label text="Idade:"/><TextField fx:id="txtIdade" prefWidth="120"/>
+    <Label text="Sexo:"/>
+    <HBox spacing="10">
+        <RadioButton fx:id="rbMas" text="Masculino" toggleGroup="$sexo"/>
+        <RadioButton fx:id="rbFem" text="Feminino" toggleGroup="$sexo"/>
+    </HBox>
+    <CheckBox fx:id="cbEsportes" text="Gosta de praticar esportes"/>
+    <Button text="Analisar" onAction="#analisar"/>
+    <Label fx:id="lblResultado" wrapText="true"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>

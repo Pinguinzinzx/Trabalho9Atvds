@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="12" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="unipar.br.trabalho9atividades.CalculadoraSimples" style="-fx-padding:25;">
+    <Label text="Calculadora Simples" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+    <HBox spacing="8" alignment="CENTER">
+        <TextField fx:id="txtNum1" promptText="Número 1" prefWidth="140"/>
+        <TextField fx:id="txtNum2" promptText="Número 2" prefWidth="140"/>
+    </HBox>
+    <HBox spacing="8" alignment="CENTER">
+        <Button text="+" onAction="#soma" prefWidth="60"/>
+        <Button text="-" onAction="#sub" prefWidth="60"/>
+        <Button text="×" onAction="#mul" prefWidth="60"/>
+        <Button text="÷" onAction="#div" prefWidth="60"/>
+    </HBox>
+    <Label fx:id="lblResultado" text="Resultado aparecerá aqui"/>
+    <Button text="Voltar" onAction="#voltar"/>
+</VBox>
